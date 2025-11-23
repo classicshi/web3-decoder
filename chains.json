@@ -1,0 +1,62 @@
+{
+  "1": {
+    "name": "Ethereum Mainnet",
+    "explorer": "api.etherscan.io"
+  },
+  "3": {
+    "name": "Ropsten",
+    "explorer": "api-ropsten.etherscan.io"
+  },
+  "4": {
+    "name": "Rinkeby",
+    "explorer": "api-rinkeby.etherscan.io"
+  },
+  "5": {
+    "name": "Goerli",
+    "explorer": "api-goerli.etherscan.io"
+  },
+  "10": {
+    "name": "Optimism",
+    "explorer": "api-optimistic.etherscan.io"
+  },
+  "25": {
+    "name": "Cronos",
+    "explorer": "api.cronoscan.com"
+  },
+  "42": {
+    "name": "Kovan",
+    "explorer": "api-kovan.etherscan.io"
+  },
+  "56": {
+    "name": "BSC",
+    "explorer": "api.bscscan.com"
+  },
+  "128": {
+    "name": "Huobi ECO",
+    "explorer": "api.hecoinfo.com"
+  },
+  "137": {
+    "name": "Polygon",
+    "explorer": "api.polygonscan.com"
+  },
+  "250": {
+    "name": "Fantom",
+    "explorer": "api.ftmscan.com"
+  },
+  "42161": {
+    "name": "Arbitrum",
+    "explorer": "api.arbiscan.io"
+  },
+  "43114": {
+    "name": "Avalanche",
+    "explorer": "api.snowtrace.io"
+  },
+  "11155111": {
+    "name": "Sepolia",
+    "explorer": "api-sepolia.etherscan.io"
+  },
+  "1313161554": {
+    "name": "Aurora",
+    "explorer": "api.aurorascan.dev"
+  }
+}
