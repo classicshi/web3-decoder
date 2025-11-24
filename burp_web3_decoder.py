@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'libs'))
 try:
-    import eth_decoder.bootstrap 
+    import eth_decoder.bootstrap
 except:
     pass
 from burp import IBurpExtender
