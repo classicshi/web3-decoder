@@ -1,10 +1,26 @@
 import sys
 import os
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'libs'))
+
 try:
     import eth_decoder.bootstrap
 except:
     pass
+
+try:
+    from eth_decoder import bootstrap
+except:
+    pass
+
+try:
+    libs_path = os.path.join(os.path.dirname(__file__), 'libs', 'eth_decoder')
+    if libs_path not in sys.path:
+        sys.path.insert(0, libs_path)
+    import bootstrap
+except:
+    pass
+
 from burp import IBurpExtender
 from burp import IMessageEditorTabFactory
 from burp import IMessageEditorTab
@@ -65,11 +81,11 @@ def get_eth_decoder_location():
     if system == "Linux":
         binary_name = 'eth_decoder.linux'
         binary_path = os.path.join(DIST_LOCATION, binary_name, binary_name)
-        os.chmod(binary_path, 0755)
+        os.chmod(binary_path, 0o755)
     elif system.startswith("Mac "):
         binary_name = 'eth_decoder.osx'
         binary_path = os.path.join(DIST_LOCATION, binary_name, binary_name)
-        os.chmod(binary_path, 0755)
+        os.chmod(binary_path, 0o755)
     elif system.startswith("Windows "):
         binary_name = 'eth_decoder.windows'
         binary_path = os.path.join(DIST_LOCATION, binary_name, binary_name + '.exe')
