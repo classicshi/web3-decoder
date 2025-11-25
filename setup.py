@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+""" 
 Setup script for web3-decoder
 Legacy setup.py for compatibility
 """
@@ -98,3 +98,4 @@ setup(
     ],
     keywords="web3 ethereum burp decoder security",
 )
+
